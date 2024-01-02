@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Markdown</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"
+        integrity="sha512-t1jq1b5U4hgz4lQoeyRD9QiVu99KxjyA939fnND+R+gLOHmuT5F9YFHJI1Nse1B1QG6/U11SPAc8fshYshb6MA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
+        integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b307f7ef1b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class='containers'>
+        <div id='inputcontainer'>
+            <h2><i class="fa-brands fa-free-code-camp"></i> Editor <button id='button'><i
+                        class="fa-solid fa-arrows-up-down-left-right"></i></button></h2>
+            <textarea id='editor' onChange=textChange()>
+                </textarea>
+        </div>
+        <div id='outputcontainer'>
+            <h2><i class="fa-brands fa-free-code-camp"></i> Preview <button><i
+                        class="fa-solid fa-arrows-up-down-left-right"></i></button></h2>
+            <div id='preview'></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
